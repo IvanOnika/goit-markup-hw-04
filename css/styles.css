@@ -325,11 +325,11 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
   color: var(--title-text-color);
 }
 
 .job-title {
-  padding-top: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -359,19 +359,19 @@ button {
 }
 
 address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .location {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .location:last-child {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .footer-nav {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 footer {
