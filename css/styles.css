@@ -42,12 +42,13 @@ ul {
   margin-right: auto;
 }
 
-.section {
+.content {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /*Хедер*/
+
 .container-header {
   display: flex;
   align-items: baseline;
@@ -74,6 +75,7 @@ ul {
 
 .list-item {
   margin-right: 50px;
+  letter-spacing: 0.02em;
 }
 
 .list-item:last-child {
@@ -82,6 +84,7 @@ ul {
 
 .contacts {
   display: flex;
+  letter-spacing: 0.02em;
 }
 
 .contact-item:first-child {
@@ -162,11 +165,17 @@ body {
 }
 
 /*Герой*/
+
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: #2f303a;
+  background-image: url(../images/bgnd-foto.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50%;
+  letter-spacing: 0.06em;
 }
 
 .visually-hidden {
@@ -197,7 +206,7 @@ body {
 /*Кнопка*/
 
 button {
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
   border-color: var(--accent-color);
@@ -225,8 +234,8 @@ button {
 
 .methods-list {
   display: flex;
-  padding-top: 94px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .list-item-method:last-child {
@@ -244,11 +253,11 @@ button {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .about-method {
   text-align: left;
-  padding-top: 10px;
 }
 
 /*Секція-2*/
@@ -257,6 +266,10 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }*/
+
+.content-no-pt {
+  padding-top: 0px;
+}
 
 .list-item-benefits {
   display: flex;
@@ -275,7 +288,7 @@ button {
 }
 
 .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -297,7 +310,6 @@ button {
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -311,6 +323,7 @@ button {
   width: 270px;
   height: 368px;
   background: #ffffff;
+  letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -340,7 +353,7 @@ button {
   display: block;
 }
 
-.background-color {
+.content-bcgnd {
   background-color: #f5f4fa;
 }
 
@@ -352,10 +365,6 @@ button {
   font-weight: 700;
   line-height: 1.19;
   color: var(--primary-white-color);
-}
-
-.footer-content {
-  padding-top: 60px;
 }
 
 address {
@@ -371,11 +380,13 @@ address {
 }
 
 .footer-nav {
-  margin-bottom: 60px;
+  letter-spacing: 0.03em;
 }
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* навігація в футері*/
@@ -408,7 +419,7 @@ address {
 .portfolio-btn {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .btn-icon {
@@ -423,6 +434,8 @@ address {
 .control-btn {
   border: 0px;
   margin-top: 0px;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
 }
 
 .control-btn:hover {
@@ -458,8 +471,6 @@ address {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .product-img {
@@ -488,11 +499,8 @@ address {
 }
 
 .product-name {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
 }
 
 .products p {
@@ -502,10 +510,11 @@ address {
 }
 
 .product-type {
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 4px;
-  padding-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+.about-products {
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
