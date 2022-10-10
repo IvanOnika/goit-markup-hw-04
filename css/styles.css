@@ -172,8 +172,7 @@ body {
   height: 16px;
 }
 
-.email:hover,
-.email:focus {
+.contact-icon:hover{
   fill: var(--accent-color);
 }
 
@@ -301,11 +300,6 @@ button {
 
 /*Секція-2*/
 
-/*.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}*/
-
 .content-no-pt {
   padding-top: 0px;
 }
@@ -335,15 +329,6 @@ button {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-/*.titles {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}*/
 
 /*Секція-3*/
 
@@ -403,7 +388,23 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 2px solid black;
+}
+
+
+.link-to-social:hover {
+  background-color: #2196f3;
+}
+
+.icon-social{
+  fill: #afb1b8 ;
+}
+
+.icon-social:hover {
+  fill: var(--primary-white-color);
+}
+
+.icon-social:hover::before{
+  fill: var(--primary-white-color);
 }
 
 .link-to-social {
@@ -415,6 +416,7 @@ button {
   height: 44px;
   border-radius: 50%;
 }
+
 
 .photo {
   display: block;
@@ -428,6 +430,23 @@ button {
 
 .clients-list {
   display: flex;
+  gap: 30px;
+}
+
+.clients-list-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.link-to-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
 }
 
 /*Footer*/
@@ -438,6 +457,7 @@ button {
   font-weight: 700;
   line-height: 1.19;
   color: var(--primary-white-color);
+  display: block;
 }
 
 address {
@@ -458,6 +478,10 @@ address {
 
 footer {
   background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -483,6 +507,52 @@ address {
 
 .address-footer:first-child {
   color: var(--primary-white-color);
+}
+
+.left-column{
+  margin-right: 70px;
+}
+
+.join-social {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+}
+
+.join-link{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover,
+.join-link:focus{
+  background-color: var(--accent-color);
+}
+
+
+.join-to-us {
+  padding-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-social-footer{
+  fill: white;
 }
 
 /*Портфоліо*/
