@@ -171,7 +171,8 @@ body {
   margin-right: 10px;
 }
 
-.contact-icon:hover{
+.contact-icon:hover ,
+.contact-icon:focus{
   fill: var(--accent-color);
 }
 
@@ -390,11 +391,13 @@ button {
 }
 
 
-.link-to-social:hover {
+.link-to-social:hover,
+.link-to-social:focus {
   background-color: #2196f3;
 }
 
-.link-to-social:hover .icon-social{
+.link-to-social:hover .icon-social,
+.link-to-social:focus .icon-social{
   fill: white;
 }
 
@@ -446,13 +449,15 @@ button {
   border-radius: 4px;
 }
 
-.link-to-client:hover{
+.link-to-client:hover,
+.link-to-client:focus{
   width: 170px;
   height: 92px;
   border: 1px solid var(--accent-color);
 }
 
-.link-to-client:hover .client-icon{
+.link-to-client:hover .client-icon,
+.link-to-client:focus .client-icon{
   fill: var(--accent-color);
 }
 
