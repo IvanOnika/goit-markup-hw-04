@@ -148,6 +148,9 @@ li .page {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts a:hover,
@@ -165,27 +168,35 @@ body {
 
 .email {
   margin-right: 10px;
+  fill: #757575;
 }
 
 .phone {
   margin-right: 10px;
+  fill: #757575;
 }
 
-.contact-icon:hover ,
-.contact-icon:focus{
+.contact-icon:hover,
+.contact-icon:focus {
   fill: var(--accent-color);
 }
 
-.contact-icon:hover::before {
+.email:hover,
+.email:focus {
   fill: var(--accent-color);
 }
-
-.contact-icon:focus::before {
-  fill: var(--accent-color);
-}
-
 .phone:hover,
 .phone:focus {
+  fill: var(--accent-color);
+}
+
+.contact-icon:hover .email,
+.contact-icon:focus .email {
+  fill: var(--accent-color);
+}
+
+.contact-icon:hover .phone,
+.contact-icon:focus .phone {
   fill: var(--accent-color);
 }
 
@@ -262,11 +273,16 @@ button {
 /*Секція-1*/
 
 .decorative-images {
+}
+
+.icon-about {
+  display: flex;
   background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
@@ -390,24 +406,19 @@ button {
   border-radius: 50%;
 }
 
-
 .link-to-social:hover,
 .link-to-social:focus {
   background-color: #2196f3;
 }
 
 .link-to-social:hover .icon-social,
-.link-to-social:focus .icon-social{
+.link-to-social:focus .icon-social {
   fill: white;
 }
 
-
-.icon-social{
-  fill: #afb1b8 ;
+.icon-social {
+  fill: #afb1b8;
 }
-
-
-
 
 .link-to-social {
   display: flex;
@@ -418,7 +429,6 @@ button {
   height: 44px;
   border-radius: 50%;
 }
-
 
 .photo {
   display: block;
@@ -439,28 +449,29 @@ button {
   display: flex;
 }
 
+.client-icon {
+  fill: #afb1b8;
+}
+
 .link-to-client {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
 .link-to-client:hover,
-.link-to-client:focus{
-  width: 170px;
-  height: 92px;
+.link-to-client:focus {
   border: 1px solid var(--accent-color);
 }
 
 .link-to-client:hover .client-icon,
-.link-to-client:focus .client-icon{
+.link-to-client:focus .client-icon {
   fill: var(--accent-color);
 }
-
 
 /*Footer*/
 
@@ -522,7 +533,7 @@ address {
   color: var(--primary-white-color);
 }
 
-.left-column{
+.left-column {
   margin-right: 70px;
 }
 
@@ -532,7 +543,7 @@ address {
   width: 206px;
 }
 
-.join-link{
+.join-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -543,10 +554,9 @@ address {
 }
 
 .join-link:hover,
-.join-link:focus{
+.join-link:focus {
   background-color: var(--accent-color);
 }
-
 
 .join-to-us {
   padding-top: 12px;
@@ -564,7 +574,7 @@ address {
   gap: 10px;
 }
 
-.icon-social-footer{
+.icon-social-footer {
   fill: white;
 }
 
